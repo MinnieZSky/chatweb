@@ -6,7 +6,8 @@ const PROTOCOL = process.env.PROTOCOL ?? DEFAULT_PROTOCOL;
 const BASE_URL = process.env.BASE_URL ?? OPENAI_URL;
 
 export async function requestOpenai(req: NextRequest) {
-  const apiKey = req.headers.get("token")?? process.env.OPENAI_API_KEY;
+  //const apiKey = req.headers.get("token")?? process.env.OPENAI_API_KEY;
+  onst apiKey = process.env.OPENAI_API_KEY;
   const openaiPath = req.headers.get("path");
 
   console.log("[Proxy] ", openaiPath);
