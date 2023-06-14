@@ -88,11 +88,11 @@ export const ALL_MODELS = [
     available: ENABLE_GPT4,
   },
   {
-    name: "gpt-3.5-turbo",
+    name: "gpt-3.5-turbo-0613",
     available: true,
   },
   {
-    name: "gpt-3.5-turbo-0301",
+    name: "gpt-3.5-turbo-16k",
     available: true,
   },
 ];
@@ -145,7 +145,7 @@ const DEFAULT_CONFIG: ChatConfig = {
   disablePromptHint: false,
 
   modelConfig: {
-    model: "gpt-3.5-turbo",
+    model: "gpt-3.5-turbo-0613",
     temperature: 1,
     max_tokens: 2000,
     presence_penalty: 0,
